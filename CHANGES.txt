@@ -1,0 +1,10 @@
+Changelog
+=========
+
+
+Version 0.3.0
+-------------
+
+Initial version.
+
+NOTE: Starts with 0.3.0 for make it in the same major branch as clojure.jdbc
