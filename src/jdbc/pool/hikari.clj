@@ -17,9 +17,14 @@
   (:import com.zaxxer.hikari.HikariConfig
            com.zaxxer.hikari.HikariDataSource))
 
+(defrecord DataSource [datasource]
+  java.io.Closeable
+  (close [_]
+    (.close datasource)))
+
 (defn make-datasource-spec
   "Given a plain dbspec, convert it on datasource dbspec
   using hikari datasource implementation."
   [dbspec]
   (let [^HikariConfig config (datasource-config dbspec)]
-    {:datasource (HikariDataSource. config)}))
+    (->DataSource (HikariDataSource. config))))
