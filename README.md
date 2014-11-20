@@ -10,13 +10,13 @@ More info on: https://github.com/brettwooldridge/HikariCP
 Leiningen
 
 ```clojure
-[clojure.jdbc/clojure.jdbc-hikari "0.3.0"]
+[clojure.jdbc/clojure.jdbc-hikari "0.3.2"]
 ```
 
 Gradle
 
 ```groovy
-compile "clojure.jdbc:clojure.jdbc-hikari:0.3.0"
+compile "clojure.jdbc:clojure.jdbc-hikari:0.3.2"
 ```
 
 Maven
@@ -25,7 +25,7 @@ Maven
 <dependency>
   <groupId>clojure.jdbc</groupId>
   <artifactId>clojure.jdbc-hikari</artifactId>
-  <version>0.3.0</version>
+  <version>0.3.2</version>
 </dependency>
 ```
 

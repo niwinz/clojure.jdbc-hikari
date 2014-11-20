@@ -1,6 +1,13 @@
 Changelog
 =========
 
+Version 0.3.2
+-------------
+
+- Update hikaricp to 2.2.5
+- Update hikari-cp (clojure wrapper) to 0.11.1
+
+
 Version 0.3.1
 -------------
 
